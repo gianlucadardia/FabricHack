@@ -1,5 +1,5 @@
 ## Environment
-[<-Back](Readme.md)
+[<-Back](./Readme.md)
 
 
 Before starting we need to some Cloud resources.
@@ -13,6 +13,7 @@ Storage account | Store audit log|*\<PREFIX\>auditlogsa* | Azure
 Eventhub (namespace and hub) | Create infrastrutcutre to collect events |*\<PREFIX\>auditeh* | Azure
 Evenstream | Collect RT audit events |  *\<PREFIX\>auditcollect-es*| Fabric
 Data Explorer | Store events |*\<PREFIX\>audievent-adx* | Fabric
+LakeHouse | Store events |*\<PREFIX\>sql_lkh | Fabric
 
 I'll use following names using this prefix
 
@@ -30,7 +31,7 @@ Evenstream | **auditevents2kql**
 Data Explorer | **auditevents-kql**
 Data Explorer (events table) | **auditevents-kql**
 Fabric Workspace | **auditsql_ws**
-Lakehouse | **audisql-lkh**
+Lakehouse | **auditsql-lkh**
 
 
 ### Resources creation
@@ -49,12 +50,15 @@ Lakehouse | **audisql-lkh**
 - **Eventhub namespace**
 ![eventhubnamespace](./images/eventhubnamespace.png)
 
-- **Eventhub** to send audit file in *.xel format
+- **Eventhub** to send audit file 
   
 ![eventhubfile](./images/eventhubfile.png)
 
-could be useful to create into Event hub Shared access policy to use to access to event hub
 
+
+- **shared access policy** to use for connection
+could be useful to create into Event hub Shared access policy to use to access to event hub
+ 
 ![ehsharedap](./images/ehgeneratesharedaccesskey.png)
 
 -----
@@ -73,38 +77,8 @@ could be useful to create into Event hub Shared access policy to use to access t
 **Data Explorer instance**
 ![database](./images/kqldatabase.png)
 
------
-
-### Resources configuration
-For testing purpose you could create SQL Database loading an  example.
-
-**Through audit setting**
-
-![selectsetting](./images/selectauditing.png)
-
-- Configure database to send audit log to 
-  - Storage account
-![storageaudit](./images/storageaudit.png)
-
-  - Eventhub
-![sendeventhub](./images/sqloneh.png)
-
-**REMEBER TO SAVE**
-![sqlsave](./images/sql-saveaudit.png)
+**Lakehouse**
+![lakehouse](./images/lkh-creation.png)
 
 
-To simplify configuration process we could  perform some activity in order to generate some log to gather from eventstream
-![generatevent](./images/generateevents.png)
-
-**Fabric configuration**
-
-s
-- connect eventsream to eventhub
-- select ADX database as destination 
-- provide tabel name as destination
-- configure process stream to explode fields
-- save all
-- create lakehouse
-- enable visible to lakehouse switch
-- add shortcut to lakehouse
-- 
+[<-Back](./Readme.md)
