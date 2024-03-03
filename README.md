@@ -20,7 +20,7 @@ Let's dive in and explore this fantastic solution!
 
 #### [Environment setup](./environment.md)
 
-#### [Configuration](./configuration)
+#### [Configuration](./configuration.md)
 
 #### [Report](./reporting.md)
 
