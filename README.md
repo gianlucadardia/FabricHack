@@ -26,6 +26,6 @@ Let's dive in and explore this fantastic solution!
 
 ### Presentation Video:
 
-[![Audit SQL DB](./images/overview/architecture.png)](https://www.youtube.com/watch?v=xnEicCNwCj4)
+[![Audit SQL DB](./images/frontpage_fhack.png)](https://www.youtube.com/watch?v=xnEicCNwCj4)
 
 #### [Presentation Video - DWN](./video/FabricHack.mp4)
