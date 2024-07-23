@@ -24,6 +24,6 @@ Let's dive in and explore this fantastic solution!
 
 #### [Report](./reporting.md)
 
-https://youtu.be/xnEicCNwCj4
+[![Audit SQL DB]](https://www.youtube.com/watch?v=xnEicCNwCj4)
 
 #### [Presentation Video - DWN](./video/FabricHack.mp4)
