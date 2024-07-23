@@ -24,6 +24,6 @@ Let's dive in and explore this fantastic solution!
 
 #### [Report](./reporting.md)
 
-#### [Presentation Video] (https://youtu.be/xnEicCNwCj4)
+[Presentation Video](https://youtu.be/xnEicCNwCj4)
 
 #### [Presentation Video - DWN](./video/FabricHack.mp4)
